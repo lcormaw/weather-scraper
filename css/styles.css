@@ -13,9 +13,7 @@ body {
 	background-position: center;
 	width: 100%;
 	min-height: 100%;
-	height: auto !important;
 	height: 100%;
-	/* Negative indent footer by it's height */
 	margin: 0 auto -60px;
 }
 
@@ -52,7 +50,8 @@ footer {
 
 .alert {
 	color: #666;
-	margin-top: 30px;
+	width: 90%;
+	margin: 30px auto 0;
 	display: none;
 }
 
@@ -61,7 +60,7 @@ h1 {
 }
 
 input[type="text"] {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 
