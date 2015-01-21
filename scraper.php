@@ -6,7 +6,8 @@
 	
 	$src = "http://www.weather-forecast.com/locations/".$city."/forecasts/latest";
 	
-	$contents = file_get_contents("$src");
+	@$contents = file_get_contents("$src");
+	
 	if($contents === FALSE) {
 		
 		echo '';
