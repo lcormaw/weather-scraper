@@ -51,6 +51,13 @@
 			
 		</div><!-- container -->
 		
+		<footer>
+			<div class="container text-center">
+				<p class="text-muted">Photo credit: <a href="https://unsplash.com/dusty_blanco">Dustin Scarpitti</a> | </p>
+				<p class="text-muted">Forecast data: <a href="http://www.weather-forecast.com">Weather-Forecast.com</a>
+			</div>
+		</footer>
+		
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		
