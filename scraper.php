@@ -4,10 +4,21 @@
 	
 	$city = str_replace(" ", "-", $city);
 	
-	$contents = file_get_contents("http://www.weather-forecast.com/locations/".$city."/forecasts/latest");
+	$src = "http://www.weather-forecast.com/locations/".$city."/forecasts/latest";
 	
-	preg_match('/3 Day Weather Forecast Summary:<\/b><span class="read-more-small"><span class="read-more-content">.<span class="phrase">(.*?)</s', $contents, $matches);
+	$contents = file_get_contents("$src");
+	if($contents === FALSE) {
+		
+		echo '';
+		
+	} else {
 	
-	echo $matches[1];
+		preg_match('/3 Day Weather Forecast Summary:<\/b><span class="read-more-small"><span class="read-more-content">.<span class="phrase">(.*?)</s', $contents, $matches);
+		
+		echo $matches[1];
+	
+	}
+	
+	
 	
 ?>
