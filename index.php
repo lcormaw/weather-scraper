@@ -39,13 +39,21 @@
 						
 					</form>
 					
+				</div><!-- search -->
+				
+			</div><!-- row -->
+			
+			<div class="row text-center">
+			
+				<div id="results" class="col-sm-6 col-sm-offset-3">
+					
 					<div id="success" class="alert alert-success"></div>
 					
 					<div id="fail" class="alert alert-danger">Could not find the weather data for that city. Please try again.</div>
 					
 					<div id="noCity" class="alert alert-danger">Please enter a city.</div>
 					
-				</div><!-- search -->
+				</div><!-- results -->
 				
 			</div><!-- row -->
 			
